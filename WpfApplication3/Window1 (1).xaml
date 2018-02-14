@@ -1,0 +1,21 @@
+﻿<Window x:Name="Alert1" x:Class="WpfApplication3.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Alert" Height="200
+        " Width="600" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="#FFF0F0F0" Icon="Icon.png">
+    <Grid x:Name="Alert">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="114*"/>
+            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Alert" HorizontalAlignment="Left" Margin="55,0,0,0" VerticalAlignment="Top" Width="453" Foreground="#FF646464" FontFamily="Segoe UI Light" FontSize="20" Height="42" Grid.ColumnSpan="2"/>
+        <Button  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"  Content="OK" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="119" Height="36" FontFamily="Segoe UI Semibold" FontSize="18" Foreground="White" BorderBrush="#FF7E7E7E" Background="#FF7E7E7E" Margin="332,154,0,0" Grid.ColumnSpan="2" Click="Button_Click_1"/>
+        <Image Margin="10,0,290,158" Source="Icon.png" Stretch="Fill"/>
+        <TextBox x:Name="ADis" HorizontalAlignment="Left" Height="99" Margin="57,49,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="480" TextChanged="TextBox_TextChanged_1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF7E7E7E" FontFamily="Segoe UI Light" FontSize="22" Grid.ColumnSpan="2" IsReadOnly="True"/>
+        <Button Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"  Content="Reset" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="119" Height="36" FontFamily="Segoe UI Semibold" FontSize="18" Foreground="#FF7E7E7E" BorderBrush="#FF7E7E7E" Background="#FFF0F0F0" Margin="118,154,0,0" Grid.Column="1" Click="Button_Click_2"/>
+
+    </Grid>
+</Window>
